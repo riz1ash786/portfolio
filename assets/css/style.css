@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+button {
+  width: 180px;
+  margin: 0 1%;
+  font-size: 125%;
+  color: #13293d;
+  background-color: rgb(206, 221, 248);
+  border: 3px solid #13293d;
+  border-radius: 20px 20px 20px 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* The user's cursor is positioned over the element */
+button:hover {
+  background-color: #b8a6e4;
+  color: #fff;
+}
+
+/* The user is actively pressing down on the element */
+button:active {
+  font-size: 180%;
+  box-shadow: 0 0 10px rgb(42, 63, 2) inset;
+}
+
+/* The element is currently in focus, either by tabbing to or clicking on it */
+button:focus {
+  outline: none;
+  border-color: #8ac4ff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: #326697;
+  color: #fff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+h1 {
+  font-size: 300%;
+}
+
+/* Change the margin */
+h2 {
+  margin: 2% 0;
+  font-size: 150%;
+}
+
+/* Change font size of headings */
+article {
+  border-bottom: 1px solid #ca763b;
+}
+
+article p {
+  margin: 2% 0;
+  font-size: 110%;
+}
+
+article ul {
+  margin-left: 5%;
+  margin-bottom: 2%;
+  font-size: 110%;
+  list-style: circle;
+}
