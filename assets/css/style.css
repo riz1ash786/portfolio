@@ -82,3 +82,10 @@ article ul {
   font-size: 110%;
   list-style: circle;
 }
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: #326697;
+  color: #fff;
+}
