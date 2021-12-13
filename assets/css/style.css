@@ -5,6 +5,16 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: #326697;
+  color: #fff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 
 nav {
   display: flex;
@@ -15,8 +25,13 @@ nav {
   justify-content: space-between;
   min-width: 300px;
 }
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
 
-button {
+header button {
   width: 180px;
   margin: 0 1%;
   font-size: 125%;
@@ -45,17 +60,13 @@ button:focus {
   outline: none;
   border-color: #8ac4ff;
 }
-
-header {
+main {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1%;
-  background-color: #326697;
-  color: #fff;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  flex: 1 1 0;
+  max-width: 1200px;
+  margin: 2% auto;
 }
+
 h1 {
   font-size: 300%;
 }
@@ -88,4 +99,38 @@ footer {
   padding: 2%;
   background-color: #326697;
   color: #fff;
+}
+aside {
+  width: 25%;
+}
+
+aside h2 {
+  font-size: 150%;
+}
+aside {
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  header,
+  main {
+    flex-direction: column;
+  }
+
+  section {
+    padding-right: 0;
+  }
+  aside {
+    width: 100%;
+    text-align: center;
+  }
+}
+aside button {
+  width: 100%;
+}
+input,
+button {
+  width: 100%;
+  margin: 2% 0;
+  padding: 1%;
 }
