@@ -59,14 +59,19 @@ p {
   font-size: 16px;
 }
 /* class hero set as primary image takes up all webpage as width is set to 100% */
-.hero {
-  height: 400px;
-  width: 100%;
+.profilepic {
+  display: inline-block;
+  height: 350px;
+  width: 350px;
+  margin-top: 25px;
   margin-bottom: 25px;
-  /* 25px margin below image and image background position set to center */
-  background-image: url("../assets/images/profile-pic.png");
+  margin-left: 25px;
+  margin-right: 25px;
+  background-image: url("/Users/rizwanashraf/homework/Homework-week2/portfolio/assets/css/images/profile-pic.png");
+  border-radius: 50%;
   background-size: cover;
-  background-position: center;
+  object-fit: cover;
+  float: left;
 }
 /* stationary image and social media image float left to text */
 .float-left {
@@ -89,7 +94,7 @@ p {
   margin-right: 20px;
   padding: 20px;
   clear: both;
-  float: right;
+  float: left;
   width: 20%;
   height: 100%;
   font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
