@@ -8,75 +8,114 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Portfolio Page</title>
   </head>
+  
   <body>
-    <header>
-      <h1>
-        My Portfolio <br />
-        <span class="Name">by Rizwan Ashraf</span>
-      </h1>
-      <nav>
-        <ul>
-          <button>About Me</button>
-          <button>Work Samples</button>
-          <button>Resumé</button>
-          <button>Contact Me</button>
-        </ul>
-      </nav>
+    <header class="header">
+        <h1>My Portfolio <br />
+          <span class="Name">by Rizwan Ashraf</span>
+        </h1>
+        <nav>
+         <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#work-samples">Work Samples</a></li>
+          <li><a href="#resume">Resumé</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+         </ul>
+        </nav>
     </header>
-
-    <main>
-      <section>
-        <article>
-          <h2>About Me</h2>
-          <p>
-            We can use different CSS properties to make the text on our website
-            more readable. The basic fundamentals of text styling includes
-            setting the font weight, font family, and font style, as well as
-            text alignment, line and letter spacing.
-          </p>
-          <p>My interests include:</p>
-          <ul>
-            <li>Formula 1</li>
-            <li>Spending time with my family</li>
-            <li>Meeting friends</li>
-            <li>Holidays</li>
-          </ul>
-        </article>
-        <article>
-          <h2>Style this text!</h2>
-          <div>
-            <p class="one">
-              This text currently has a 'font-weight' of 900, 'font-family' of
-              sans-serif, and 'font-style' of oblique.
-            </p>
-            <p class="two">
-              This text currently has a 'font-weight' of 500, 'font-family' of
-              serif, and 'font-style' of italic.
-            </p>
-            <p class="three">
-              This text currently has a 'font-weight' of 100, 'font-family' of
-              monospace, and 'font-style' of normal.
-            </p>
-            <p class="four">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-              excepturi temporibus rem adipisci optio rerum facere blanditiis,
-              ipsam iure esse accusantium eligendi aut est deserunt. In,
-              praesentium at. Inventore, consequatur!
-            </p>
-          </div>
-        </article>
+    
+    <img class="hero"></img>
+    <main 
+    class="content">
+      <section class="about-me">
+        <img
+          src="./assets/images/search-engine-optimization.jpg"
+          alt="seo image stationary on desk"
+          class="float-left"
+        />
+        <h2>About Me</h2>
+        <p>
+          The dominance of mobile internet use means that users are searching
+          for the right business as they travel, shop, or sit on their couch at
+          home. Search Engine Optimization (SEO) allows you to increase your
+          visibility and find the right customers for your business.
+        </p>
+    </section>
+      <section
+        id="work-samples"
+        class="work-samples"
+      >
+        <img
+          src="./assets/images/online-reputation-management.jpg"
+          alt="repuation chart increasing image on laptop"
+          class="float-right"
+        />
+        <h2>Work Samples</h2>
+        <p>
+          The web is full of opinions, and some of these can be negative. Socia
+          media allows anyone with an internet connection to say whatever they
+          want about your business. Online Reputation Management gives you the
+          control over what potential customers see when they search for your
+          business.
+        </p>
+    </section>
+    <section id="resume" class="resume">
+      <img
+        src="./assets/images/socia-media-marketing.jpg"alt="resume cv pic"
+        class="float-left"
+      />
+      <h2>Resumé</h2>
+      <p>
+        bllffkrfqkfrfrfrfrffrfgrgrqgqrgrgrgrgerrrgeqgrfrrrrrrrrrrrrrrrrrrrrrrrrr
+        rrrrrrrrrrrrrr
+        rrrrrrrrrrrrrrrrrrr.
+      </p>
+    </section>
+      <section id="contact-me" class="contact-me">
+        <img
+          src="./assets/images/socia-media-marketing.jpg"alt="contact me pic"
+          class="float-left"
+        />
+        <h2>Contact Me</h2>
+        <p>
+          Sociamedia continues to have a sizable influence on buying habits.
+          Socia media marketing helps you determine which platforms are suited
+          to your brand, using analytics to find the right markets and increase
+          your lead generation.
+        </p>
       </section>
-      <aside>
-        <h2>Sign up to Learn More!</h2>
-        <form>
-          <input type="text" placeholder="E-mail address" />
-          <button>Submit</button>
-        </form>
-      </aside>
     </main>
-
-    <footer>
-      <span>Thanks for visiting!</span>
+    <aside class="benefits">
+      <section class="benefit-lead">
+        <h3>Lead Generation</h3>
+        <img
+          src="./assets/images/lead-generation.png"alt="lead gen cogs logo"/>
+        <p>
+          Inbound strategies for lead generation require less work for your
+          business, bringing customers directly to your website.
+        </p>
+    </section>
+      <section class="benefit-brand">
+        <h3>Brand Awareness</h3>
+        <img
+          src="./assets/images/brand-awareness.png"alt="brand awareness logo"/>
+        <p>
+          Users find your business through paid and organic searches, increasing
+          the search ranking and visibility for your business.
+        </p>
+      </section>
+      <section class="benefit-cost">
+        <h3>Cost Management</h3>
+        <img src="./assets/images/cost-management.png"alt="cogs logo" />
+        <p>
+          As the search ranking for your business increases, your advertising
+          costs decrease, and you no longer need to advertise your page.
+        </p>
+      </section>
+    </aside>
+    <footer class="footer">
+      <h3>Made with ❤️️ by Horiseon</h3>
+      <span>&copy; 2019 Horiseon Social Solution Services, Inc.</span>
     </footer>
   </body>
 </html>

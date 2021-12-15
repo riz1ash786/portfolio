@@ -1,176 +1,233 @@
-body {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.3;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1%;
-  background-color: #326697;
-  color: #fff;
-}
-
 .Name {
   font-size: 65%;
   font-family: fantasy;
   color: #03bfb5;
   float: right;
 }
-
-header button {
-  width: 160px;
-  margin: 0 1%;
-  font-size: 100%;
-  color: #13293d;
-  background-color: rgb(206, 221, 248);
-  border: 3px solid #13293d;
-  border-radius: 20px 20px 20px 20px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+/* Universal selector */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-/* The user's cursor is positioned over the element */
-button:hover {
-  background-color: #b8a6e4;
-  color: #fff;
+/* add background color to body */
+body {
+  background-color: #d9dcd6;
 }
-
-/* The user is actively pressing down on the element */
-button:active {
-  font-size: 180%;
-  box-shadow: 0 0 10px rgb(42, 63, 2) inset;
+/* add style to header (adds padding, font style, background color and font color */
+.header {
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #2a607c;
+  color: #ffffff;
 }
-
-/* The element is currently in focus, either by tabbing to or clicking on it */
-button:focus {
-  outline: none;
-  border-color: #8ac4ff;
+/* content in h1 header is on main axis with display set to inline-block */
+.header h1 {
+  display: inline-block;
+  font-size: 48px;
 }
-/* Change font size of headings */
-
-h1 {
-  font-size: 250%;
+/* letters 'seo' within title are a different font color to other letters in title*/
+.header h1 .seo {
+  color: #d9dcd6;
 }
-
-/* Change the margin */
-h2 {
-  margin: 2% 0;
-  font-size: 150%;
+/* add style to header navigation (adds padding to top, margin, font size and font color and float to right hand side */
+.header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    "sans-serif";
+  font-size: 20px;
 }
 
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  min-width: 300px;
+.header nav ul {
+  list-style-type: none;
 }
 
-nav a {
-  color: #b9c6ae;
-  font-weight: bold;
+.header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+/* anchor tags set to color #ffffff */
+a {
+  color: #ffffff;
   text-decoration: none;
 }
-
-main {
-  display: flex;
-  flex: 1 1 0;
-  max-width: 1200px;
-  margin: 2% auto;
+/* paragraph font size 16px, this is an absolute prefix */
+p {
+  font-size: 16px;
 }
-
-section {
-  flex: 1 1 0;
-  padding-right: 5%;
-}
-
-article {
-  border-bottom: 1px solid #ca763b;
-}
-
-article p {
-  margin: 2% 0;
-  font-size: 110%;
-}
-
-/* Change the margin specifically */
-article ul {
-  margin-left: 5%;
-  margin-bottom: 2%;
-  font-size: 110%;
-  list-style: circle;
-}
-
-/* Implement font stacks */
-.one {
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-weight: 900;
-  font-style: oblique;
-}
-
-.two {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.three {
-  font-family: "Menlo", "Lucida Console", monospace;
-  font-weight: 100;
-  font-style: normal;
-}
-
-/* Using DevTools, change the following properties to demonstrate the differences */
-.four {
-  /* Change font family: serif, sans-serif, monospace, cursive */
-  font-family: serif;
-  /* Change font weight: bold, 100-900 */
-  font-weight: 100;
-  /* Change the font style: normal, italic, oblique */
-  font-style: normal;
-  /* Transform the text: uppercase, lowercase, capitalize */
-  text-transform: none;
-  /* Set text decorations on fonts: underline, overline, line-through */
-  text-decoration: none;
-}
-
-aside {
-  width: 25%;
-}
-
-aside h2 {
-  font-size: 150%;
-}
-
-input,
-button {
+/* class hero set as primary image takes up all webpage as width is set to 100% */
+.hero {
+  height: 400px;
   width: 100%;
-  margin: 2% 0;
-  padding: 1%;
+  margin-bottom: 25px;
+  /* 25px margin below image and image background position set to center */
+  background-image: url("../images/digital-marketing-meeting.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/* stationary image and social media image float left to text */
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+/* laptop image set to float right of text */
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+/* content takes up 75% of available space and set to inline-block so that they are stacked */
+.content {
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
+}
+/* add style to benefits (adds margin, float to right hand side, padding, font style, background color and font color */
+.benefits {
+  margin-right: 20px;
+  padding: 20px;
+  clear: both;
+  float: right;
+  width: 20%;
+  height: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    "sans-serif";
+  background-color: #2589bd;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  padding: 2%;
-  background-color: #326697;
-  color: #fff;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+.benefit-lead {
+  margin-bottom: 32px;
+  color: #ffffff;
 }
 
-@media screen and (max-width: 768px) {
-  header,
-  main {
-    flex-direction: column;
-  }
+.benefit-brand {
+  margin-bottom: 32px;
+  color: #ffffff;
+}
 
-  section {
-    padding-right: 0;
-  }
+.benefit-cost {
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+/* heading h3 set to center */
+.benefit-lead h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* heading h3 set to center */
+.benefit-brand h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* heading h3 set to center */
+.benefit-cost h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* margin of image set to 10px 'auto' remains central when webpage window is altered. Display set to block */
+.benefit-lead img {
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
+}
+/* margin of image set to 10px 'auto' remains central when webpage window is altered. Display set to block */
+.benefit-brand img {
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
+}
+/* margin of image set to 10px 'auto' remains central when webpage window is altered. Display set to block */
+.benefit-cost img {
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
+}
 
-  aside {
-    width: 100%;
-    text-align: center;
-  }
+/* consistent margin of 50 px for main section content with box height set at 300px */
+.about-me {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+
+.work-samples {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+
+.resume {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+.contact-me {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+/* max-height, font-size and margin-bottom for img and h2 heading remain consistent when webpage window size is altered */
+.about-me img {
+  max-height: 200px;
+}
+
+.online-reputation-management img {
+  max-height: 200px;
+}
+
+.contact-me img {
+  max-height: 200px;
+}
+
+.resume img {
+  max-height: 200px;
+}
+
+.about-me h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.work-samples h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.contact-me h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.resume h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+/* footer padding set to 30px and aligned to center */
+.footer {
+  padding: 30px;
+  clear: both;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+/* footer set to an absolute prefix font size of 20px */
+.footer h3 {
+  font-size: 20px;
 }
