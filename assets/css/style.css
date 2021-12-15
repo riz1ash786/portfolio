@@ -28,10 +28,6 @@ body {
   display: inline-block;
   font-size: 42px;
 }
-/* letters 'seo' within title are a different font color to other letters in title*/
-.header h1 .seo {
-  color: #d9dcd6;
-}
 /* add style to header navigation (adds padding to top, margin, font size and font color and float to right hand side */
 .header nav {
   padding-top: 15px;
@@ -68,7 +64,7 @@ p {
   width: 100%;
   margin-bottom: 25px;
   /* 25px margin below image and image background position set to center */
-  background-image: url("../images/digital-marketing-meeting.jpg");
+  background-image: url("../assets/images/profile-pic.png");
   background-size: cover;
   background-position: center;
 }
