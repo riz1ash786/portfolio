@@ -1,7 +1,14 @@
+main {
+  display: flex;
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
+  margin-top: 2%;
+}
+
 .Name {
   font-size: 65%;
   font-family: fantasy;
-  color: #03bfb5;
+  color: #eff5f9;
   float: right;
   margin-top: 5px;
 }
@@ -13,15 +20,18 @@
 }
 /* add background color to body */
 body {
-  background-color: #d9dcd6;
+  background-color: #eff5f9;
 }
 /* add style to header (adds padding, font style, background color and font color */
 .header {
   padding: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: #2a607c;
-  color: #ffffff;
+  background-color: #1a7dbb;
+  color: #eff5f9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 /* content in h1 header is on main axis with display set to inline-block */
 .header h1 {
@@ -51,7 +61,7 @@ body {
 
 /* anchor tags set to color #ffffff */
 a {
-  color: #ffffff;
+  color: #eff5f9;
   text-decoration: none;
 }
 /* paragraph font size 16px, this is an absolute prefix */
@@ -67,7 +77,7 @@ p {
   margin-bottom: 25px;
   margin-left: 25px;
   margin-right: 25px;
-  background-image: url("/Users/rizwanashraf/homework/Homework-week2/portfolio/assets/css/images/profile-pic.png");
+  background-image: url("/Users/rizwanashraf/homework/Homework-week2/portfolio/assets/images/profile-pic.png");
   border-radius: 50%;
   background-size: cover;
   object-fit: cover;
@@ -88,6 +98,8 @@ p {
   width: 75%;
   display: inline-block;
   margin-left: 20px;
+  flex: 1 0 0;
+  padding: 10px;
 }
 /* add style to benefits (adds margin, float to right hand side, padding, font style, background color and font color */
 .benefits {
@@ -104,17 +116,17 @@ p {
 
 .benefit-lead {
   margin-bottom: 32px;
-  color: #ffffff;
+  color: #eff5f9;
 }
 
 .benefit-brand {
   margin-bottom: 32px;
-  color: #ffffff;
+  color: #eff5f9;
 }
 
 .benefit-cost {
   margin-bottom: 32px;
-  color: #ffffff;
+  color: #eff5f9;
 }
 /* heading h3 set to center */
 .benefit-lead h3 {
@@ -156,8 +168,8 @@ p {
   padding: 50px;
   height: 300px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
-  color: #ffffff;
+  background-color: #0070bb;
+  color: #eff5f9;
 }
 
 .work-samples {
@@ -166,7 +178,7 @@ p {
   height: 300px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #0072bb;
-  color: #ffffff;
+  color: #eff5f9;
 }
 
 .resume {
@@ -175,7 +187,7 @@ p {
   height: 300px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #0072bb;
-  color: #ffffff;
+  color: #eff5f9;
 }
 .contact-me {
   margin-bottom: 20px;
@@ -183,14 +195,14 @@ p {
   height: 300px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #0072bb;
-  color: #ffffff;
+  color: #eff5f9;
 }
 /* max-height, font-size and margin-bottom for img and h2 heading remain consistent when webpage window size is altered */
 .about-me img {
   max-height: 200px;
 }
 
-.online-reputation-management img {
+.work-samples img {
   max-height: 200px;
 }
 
