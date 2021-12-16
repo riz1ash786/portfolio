@@ -1,3 +1,10 @@
+/* Universal selector */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 main {
   display: flex;
   /* Forces elements to the next line if they don't fit */
@@ -5,23 +12,10 @@ main {
   margin-top: 2%;
 }
 
-.Name {
-  font-size: 65%;
-  font-family: fantasy;
-  color: #eff5f9;
-  float: right;
-  margin-top: 5px;
-}
-/* Universal selector */
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-/* add background color to body */
 body {
   background-color: #eff5f9;
 }
+
 /* add style to header (adds padding, font style, background color and font color */
 .header {
   padding: 20px;
@@ -33,6 +27,15 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.Name {
+  font-size: 65%;
+  font-family: fantasy;
+  color: #bd6925;
+  float: right;
+  margin-top: 5px;
+}
+
 /* content in h1 header is on main axis with display set to inline-block */
 .header h1 {
   display: inline-block;
@@ -71,8 +74,8 @@ p {
 /* class hero set as primary image takes up all webpage as width is set to 100% */
 .profilepic {
   display: inline-block;
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
   margin-top: 25px;
   margin-bottom: 25px;
   margin-left: 25px;
@@ -95,12 +98,12 @@ p {
 }
 /* content takes up 75% of available space and set to inline-block so that they are stacked */
 .content {
-  width: 75%;
-  display: inline-block;
   margin-left: 20px;
   flex: 1 0 0;
   padding: 10px;
+  float: right;
 }
+
 /* add style to benefits (adds margin, float to right hand side, padding, font style, background color and font color */
 .benefits {
   margin-right: 20px;
@@ -111,7 +114,86 @@ p {
   height: 100%;
   font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
     "sans-serif";
-  background-color: #2589bd;
+  background-color: #bd6925;
+  flex: 1 0 0;
+  flex-wrap: wrap;
+}
+
+/* consistent margin of 50 px for main section content with box height set at 300px */
+.about-me {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0070bb;
+  color: #eff5f9;
+  width: 75%;
+}
+
+.work-samples {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #eff5f9;
+  width: 37%;
+}
+
+.resume {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #eff5f9;
+  width: 37%;
+  margin-left: 1%;
+}
+.contact-me {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #eff5f9;
+  width: 75%;
+}
+/* max-height, font-size and margin-bottom for img and h2 heading remain consistent when webpage window size is altered */
+.about-me img {
+  max-height: 200px;
+}
+
+.work-samples img {
+  max-height: 200px;
+}
+
+.contact-me img {
+  max-height: 200px;
+}
+
+.resume img {
+  max-height: 200px;
+}
+
+.about-me h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.work-samples h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.contact-me h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.resume h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
 }
 
 .benefit-lead {
@@ -160,78 +242,6 @@ p {
   display: block;
   margin: 10px auto;
   max-width: 150px;
-}
-
-/* consistent margin of 50 px for main section content with box height set at 300px */
-.about-me {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0070bb;
-  color: #eff5f9;
-}
-
-.work-samples {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
-  color: #eff5f9;
-}
-
-.resume {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
-  color: #eff5f9;
-}
-.contact-me {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
-  color: #eff5f9;
-}
-/* max-height, font-size and margin-bottom for img and h2 heading remain consistent when webpage window size is altered */
-.about-me img {
-  max-height: 200px;
-}
-
-.work-samples img {
-  max-height: 200px;
-}
-
-.contact-me img {
-  max-height: 200px;
-}
-
-.resume img {
-  max-height: 200px;
-}
-
-.about-me h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.work-samples h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.contact-me h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.resume h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
 }
 
 /* footer padding set to 30px and aligned to center */
