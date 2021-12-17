@@ -5,13 +5,6 @@
   margin: 0;
 }
 
-main {
-  display: flex;
-  /* Forces elements to the next line if they don't fit */
-  flex-wrap: wrap;
-  margin-top: 2%;
-}
-
 body {
   background-color: #eff5f9;
 }
@@ -62,6 +55,10 @@ body {
   margin-top: 5px;
 }
 
+nav a:hover {
+  color: red;
+}
+
 /* anchor tags set to color #ffffff */
 a {
   color: #eff5f9;
@@ -70,21 +67,6 @@ a {
 /* paragraph font size 16px, this is an absolute prefix */
 p {
   font-size: 16px;
-}
-/* class hero set as primary image takes up all webpage as width is set to 100% */
-.profilepic {
-  display: inline-block;
-  height: 300px;
-  width: 300px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-left: 25px;
-  margin-right: 25px;
-  background-image: url("/Users/rizwanashraf/homework/Homework-week2/portfolio/assets/images/profile-pic.png");
-  border-radius: 50%;
-  background-size: cover;
-  object-fit: cover;
-  float: left;
 }
 /* stationary image and social media image float left to text */
 .float-left {
@@ -101,22 +83,12 @@ p {
   margin-left: 20px;
   flex: 1 0 0;
   padding: 10px;
-  float: right;
-}
-
-/* add style to benefits (adds margin, float to right hand side, padding, font style, background color and font color */
-.benefits {
-  margin-right: 20px;
-  padding: 20px;
-  clear: both;
-  float: left;
-  width: 20%;
-  height: 100%;
-  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
-    "sans-serif";
-  background-color: #bd6925;
-  flex: 1 0 0;
+  display: flex;
+  /* Forces elements to the next line if they don't fit */
   flex-wrap: wrap;
+  margin-top: 2%;
+  width: 95%;
+  justify-content: space-around;
 }
 
 /* consistent margin of 50 px for main section content with box height set at 300px */
@@ -127,17 +99,17 @@ p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #0070bb;
   color: #eff5f9;
-  width: 75%;
+  width: 100%;
 }
 
 .work-samples {
   margin-bottom: 20px;
   padding: 50px;
-  height: 300px;
+  height: 680px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #0072bb;
   color: #eff5f9;
-  width: 37%;
+  width: 100%;
 }
 
 .resume {
@@ -147,8 +119,8 @@ p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #0072bb;
   color: #eff5f9;
-  width: 37%;
-  margin-left: 1%;
+  width: 49%;
+  margin-right: 1%;
 }
 .contact-me {
   margin-bottom: 20px;
@@ -157,7 +129,8 @@ p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #0072bb;
   color: #eff5f9;
-  width: 75%;
+  width: 49%;
+  margin-left: 1%;
 }
 /* max-height, font-size and margin-bottom for img and h2 heading remain consistent when webpage window size is altered */
 .about-me img {
@@ -196,54 +169,6 @@ p {
   font-size: 36px;
 }
 
-.benefit-lead {
-  margin-bottom: 32px;
-  color: #eff5f9;
-}
-
-.benefit-brand {
-  margin-bottom: 32px;
-  color: #eff5f9;
-}
-
-.benefit-cost {
-  margin-bottom: 32px;
-  color: #eff5f9;
-}
-/* heading h3 set to center */
-.benefit-lead h3 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-/* heading h3 set to center */
-.benefit-brand h3 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-/* heading h3 set to center */
-.benefit-cost h3 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-/* margin of image set to 10px 'auto' remains central when webpage window is altered. Display set to block */
-.benefit-lead img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
-/* margin of image set to 10px 'auto' remains central when webpage window is altered. Display set to block */
-.benefit-brand img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
-/* margin of image set to 10px 'auto' remains central when webpage window is altered. Display set to block */
-.benefit-cost img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
-
 /* footer padding set to 30px and aligned to center */
 .footer {
   padding: 30px;
@@ -256,4 +181,50 @@ p {
 /* footer set to an absolute prefix font size of 20px */
 .footer h3 {
   font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  height: 510px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.box1 {
+  width: 40%;
+  height: 500px;
+  background-color: brown;
+  float: left;
+  border: 10px solid black;
+}
+
+.box2 {
+  width: 19%;
+  height: 500px;
+  background-color: rgb(6, 7, 105);
+  float: left;
+  margin-left: 1%;
+  border: 10px solid black;
+}
+
+.box3 {
+  width: 19%;
+  height: 500px;
+  background-color: rgb(33, 184, 33);
+  float: left;
+  margin-left: 1%;
+  border: 10px solid black;
+}
+
+.box4 {
+  width: 19%;
+  height: 500px;
+  background-color: rgb(214, 187, 31);
+  float: left;
+  margin-left: 1%;
+  border: 10px solid black;
+}
+
+.box4:hover {
+  opacity: 75%;
 }
