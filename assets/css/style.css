@@ -66,7 +66,7 @@ a {
 }
 /* paragraph font size 16px, this is an absolute prefix */
 p {
-  font-size: 16px;
+  font-size: 18px;
 }
 /* stationary image and social media image float left to text */
 .float-left {
@@ -169,6 +169,11 @@ p {
   font-size: 36px;
 }
 
+h3 {
+  font-size: 16px;
+  color: #eff5f9;
+}
+
 /* footer padding set to 30px and aligned to center */
 .footer {
   padding: 30px;
@@ -179,8 +184,16 @@ p {
 }
 
 /* footer set to an absolute prefix font size of 20px */
-.footer h3 {
+.footer h4 {
   font-size: 20px;
+  color: #bd6925;
+}
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
 }
 
 .container {
@@ -195,7 +208,8 @@ p {
   height: 500px;
   background-image: url("/Users/rizwanashraf/homework/Homework-week2/portfolio/assets/images/Code Refactoring.png");
   float: left;
-  border: 10px solid #2a2725;
+  border: 8px solid #2a2725;
+  position: relative;
 }
 
 .box2 {
@@ -204,7 +218,8 @@ p {
   background-color: rgb(6, 7, 105);
   float: left;
   margin-left: 1%;
-  border: 10px solid #2a2725;
+  border: 8px solid #2a2725;
+  position: relative;
 }
 
 .box3 {
@@ -213,7 +228,8 @@ p {
   background-color: rgb(33, 184, 33);
   float: left;
   margin-left: 1%;
-  border: 10px solid #2a2725;
+  border: 8px solid #2a2725;
+  position: relative;
 }
 
 .box4 {
@@ -222,7 +238,8 @@ p {
   background-color: rgb(214, 187, 31);
   float: left;
   margin-left: 1%;
-  border: 10px solid #2a2725;
+  border: 8px solid #2a2725;
+  position: relative;
 }
 
 .box1:hover {
@@ -242,29 +259,41 @@ p {
 }
 
 .box1 .smallbox1 {
+  position: absolute;
   width: 150px;
   height: 75px;
   background: #2a2725;
-  left: 25%;
-  bottom: 25%;
+  padding: 10px;
+  left: 0%;
+  bottom: 10%;
 }
 
 .box2 .smallbox2 {
+  position: absolute;
   width: 150px;
   height: 75px;
   background: #2a2725;
+  padding: 10px;
+  left: 0%;
+  bottom: 10%;
 }
 
 .box3 .smallbox3 {
+  position: absolute;
   width: 150px;
   height: 75px;
   background: #2a2725;
+  padding: 10px;
+  left: 0%;
+  bottom: 10%;
 }
 
 .box4 .smallbox4 {
+  position: absolute;
   width: 150px;
   height: 75px;
   background: #2a2725;
-  left: 25%;
-  bottom: 25%;
+  padding: 10px;
+  left: 0%;
+  bottom: 10%;
 }
