@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #eff5f9;
+  background-color: #2a2725;
 }
 
 /* add style to header (adds padding, font style, background color and font color */
@@ -14,7 +14,7 @@ body {
   padding: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: #1a7dbb;
+  background-color: #7f7d7c;
   color: #eff5f9;
   display: flex;
   flex-wrap: wrap;
@@ -56,7 +56,7 @@ body {
 }
 
 nav a:hover {
-  color: red;
+  color: #bd6925;
 }
 
 /* anchor tags set to color #ffffff */
@@ -97,7 +97,7 @@ p {
   padding: 50px;
   height: 300px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0070bb;
+  background-color: #7f7d7c;
   color: #eff5f9;
   width: 100%;
 }
@@ -107,7 +107,7 @@ p {
   padding: 50px;
   height: 680px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
+  background-color: #7f7d7c;
   color: #eff5f9;
   width: 100%;
 }
@@ -117,7 +117,7 @@ p {
   padding: 50px;
   height: 300px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
+  background-color: #7f7d7c;
   color: #eff5f9;
   width: 49%;
   margin-right: 1%;
@@ -127,7 +127,7 @@ p {
   padding: 50px;
   height: 300px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
+  background-color: #7f7d7c;
   color: #eff5f9;
   width: 49%;
   margin-left: 1%;
@@ -193,9 +193,9 @@ p {
 .box1 {
   width: 40%;
   height: 500px;
-  background-color: brown;
+  background-image: url("/Users/rizwanashraf/homework/Homework-week2/portfolio/assets/images/Code Refactoring.png");
   float: left;
-  border: 10px solid black;
+  border: 10px solid #2a2725;
 }
 
 .box2 {
@@ -204,7 +204,7 @@ p {
   background-color: rgb(6, 7, 105);
   float: left;
   margin-left: 1%;
-  border: 10px solid black;
+  border: 10px solid #2a2725;
 }
 
 .box3 {
@@ -213,7 +213,7 @@ p {
   background-color: rgb(33, 184, 33);
   float: left;
   margin-left: 1%;
-  border: 10px solid black;
+  border: 10px solid #2a2725;
 }
 
 .box4 {
@@ -222,9 +222,35 @@ p {
   background-color: rgb(214, 187, 31);
   float: left;
   margin-left: 1%;
-  border: 10px solid black;
+  border: 10px solid #2a2725;
 }
 
 .box4:hover {
   opacity: 75%;
+}
+
+.box1 .smallbox1 {
+  width: 150px;
+  height: 75px;
+  background: #2a2725;
+  left: 25%;
+  bottom: 25%;
+}
+
+.box2 .smallbox2 {
+  width: 150px;
+  height: 75px;
+  background: #2a2725;
+}
+
+.box3 .smallbox3 {
+  width: 150px;
+  height: 75px;
+  background: #2a2725;
+}
+
+.box4 .smallbox4 {
+  width: 150px;
+  height: 75px;
+  background: #2a2725;
 }
