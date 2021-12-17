@@ -225,6 +225,18 @@ p {
   border: 10px solid #2a2725;
 }
 
+.box1:hover {
+  opacity: 75%;
+}
+
+.box2:hover {
+  opacity: 75%;
+}
+
+.box3:hover {
+  opacity: 75%;
+}
+
 .box4:hover {
   opacity: 75%;
 }
@@ -253,4 +265,6 @@ p {
   width: 150px;
   height: 75px;
   background: #2a2725;
+  left: 25%;
+  bottom: 25%;
 }
