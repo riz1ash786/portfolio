@@ -203,7 +203,6 @@ h3 {
 .box1 {
   width: 40%;
   height: 500px;
-  background-image: url("/Users/rizwanashraf/homework/Homework-week2/portfolio/assets/images/Code Refactoring.png");
   float: left;
   border: 8px solid #2a2725;
   position: relative;
@@ -212,7 +211,6 @@ h3 {
 .box2 {
   width: 19%;
   height: 500px;
-  background-image: url("/Users/rizwanashraf/homework/Homework-week2/portfolio/assets/images/Code Refactoring.png");
   float: left;
   margin-left: 1%;
   border: 8px solid #2a2725;
@@ -222,7 +220,6 @@ h3 {
 .box3 {
   width: 19%;
   height: 500px;
-  background-image: url("/Users/rizwanashraf/homework/Homework-week2/portfolio/assets/images/Code Refactoring.png");
   float: left;
   margin-left: 1%;
   border: 8px solid #2a2725;
@@ -232,11 +229,20 @@ h3 {
 .box4 {
   width: 19%;
   height: 500px;
-  background-image: url("/Users/rizwanashraf/homework/Homework-week2/portfolio/assets/images/Code Refactoring.png");
   float: left;
   margin-left: 1%;
   border: 8px solid #2a2725;
   position: relative;
+}
+
+.background-image {
+  height: 100%;
+  width: 100%;
+}
+
+.background-imagebox1 {
+  height: 100%;
+  width: 100%;
 }
 
 .box1:hover {
@@ -255,7 +261,7 @@ h3 {
   opacity: 75%;
 }
 
-.box1 .smallbox1 {
+.smallbox1 {
   position: absolute;
   width: 150px;
   height: 75px;
@@ -265,7 +271,7 @@ h3 {
   bottom: 10%;
 }
 
-.box2 .smallbox2 {
+.smallbox2 {
   position: absolute;
   width: 150px;
   height: 75px;
@@ -275,7 +281,7 @@ h3 {
   bottom: 10%;
 }
 
-.box3 .smallbox3 {
+.smallbox3 {
   position: absolute;
   width: 150px;
   height: 75px;
@@ -285,7 +291,7 @@ h3 {
   bottom: 10%;
 }
 
-.box4 .smallbox4 {
+.smallbox4 {
   position: absolute;
   width: 150px;
   height: 75px;
@@ -319,5 +325,10 @@ h3 {
 @keyframes wave-animation {
   50% {
     transform: rotate(16deg);
+  }
+}
+@media screen and (max-width: 768px) {
+  .container--portfolio {
+    flex-direction: column;
   }
 }
