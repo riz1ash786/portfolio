@@ -68,30 +68,27 @@ nav a:hover {
   color: #bd6925;
 }
 
-/* anchor tags set to color #ffffff */
 a {
   color: #eff5f9;
   text-decoration: none;
 }
-/* paragraph font size 16px, this is an absolute prefix */
+/* paragraph font size 18px */
 p {
   font-size: 18px;
   margin: 10px 0;
 }
-/* stationary image and social media image float left to text */
+
 .float-left {
   float: left;
   margin-right: 25px;
 }
-/* laptop image set to float right of text */
+
 .float-right {
   float: right;
   margin-left: 25px;
 }
-/* content takes up 75% of available space and set to inline-block so that they are stacked */
 .content {
   margin-left: 20px;
-  flex: 1 0 0;
   padding: 10px;
   display: flex;
   /* Forces elements to the next line if they don't fit */
@@ -101,7 +98,6 @@ p {
   justify-content: space-around;
 }
 
-/* consistent margin of 50 px for main section content with box height set at 300px */
 .about-me {
   margin-bottom: 20px;
   padding: 50px;
@@ -206,7 +202,6 @@ h3 {
   height: 510px;
   margin: 0 auto;
   display: flex;
-  /* flex: 0 0 400px; */
 }
 
 .box1 {
@@ -241,7 +236,6 @@ h3 {
   margin-left: 1%;
   border: 8px solid #2a2725;
   position: relative;
-  /* background-size: cover; */
   overflow: hidden;
 }
 
@@ -320,16 +314,16 @@ h3 {
   text-align: center;
 }
 
-/* footer set to an absolute prefix font size of 20px */
+/* footer set to font size of 20px */
 .footer h4 {
   font-size: 20px;
   color: #bd6925;
 }
 .wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  /transform-origin: 70% 70%;
   display: inline-block;
 }
 @keyframes wave-animation {
@@ -340,12 +334,15 @@ h3 {
 @media screen and (max-width: 768px) {
   .container--portfolio {
     flex-direction: column;
-    /* change width for mobile viewpoints
-  chnage height
-  amend posiitoning */
+    width: 400%;
+    height: 400%;
   }
   .box1 {
+    flex-direction: column;
+    width: 20%;
+    height: 21%;
   }
   .smallbox1 {
+    flex-direction: column;
   }
 }
