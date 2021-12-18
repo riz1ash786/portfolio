@@ -76,6 +76,7 @@ a {
 /* paragraph font size 16px, this is an absolute prefix */
 p {
   font-size: 18px;
+  margin: 10px 0;
 }
 /* stationary image and social media image float left to text */
 .float-left {
@@ -146,9 +147,16 @@ p {
   margin: 10px 0;
 }
 
-.contact-me li :hover,
-.contact-me li a:focus {
+.resume li :hover,
+.resume li :focus {
   color: #bd6925;
+  text-decoration: underline;
+}
+
+.contact-me li :hover,
+.contact-me li :focus {
+  color: #bd6925;
+  text-decoration: underline;
 }
 
 /* max-height, font-size and margin-bottom for img and h2 heading remain consistent when webpage window size is altered */
@@ -198,6 +206,7 @@ h3 {
   height: 510px;
   margin: 0 auto;
   flex-wrap: wrap;
+  display: flex;
 }
 
 .box1 {
@@ -241,8 +250,8 @@ h3 {
 }
 
 .background-imagebox1 {
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 
 .box1:hover {
