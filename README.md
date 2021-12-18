@@ -1,20 +1,18 @@
-# portfolio
+# Portfolio
 
 ## Description
 
-- I have been tasked to refactor the existing code with the intention of improving it without changing the output, also to improve its accessibility.
+- I have been tasked to create a portfolio of my work samples that I can present to potential employers and clients.
 
 ## Acceptance Criteria - Checklist
 
-- I have added semantic elements including 'header', 'nav, 'section', 'aside'
+- When my web application is opened you can see my name, a recent a profile picture and links to sections about myself, samples of my work, my cv and my contact information.
 
-- I have improved the structure of the header and attempted to improve the main section
+- the links in the navigation are responsive and when clicked upon will navigate to the relevant section on the webpage application. When the 'Work Samples' link in the nav bar is clicked it will scroll to the work samples section presenting my applications with the first application being larger in size compared to the corresponding applications.
 
-- I have added 'alt' attributes to all 'img' elements
+- When the application images are clicked the relevant applications will be deployed.
 
-- The heading attributes fall in sequential order
-
-- I have added company name and 'Search Engine Optimization' to the title element
+- When the website is resized it adapts to different screen sizes and devices and also adapts to different viewpoints.
 
 ---
 
