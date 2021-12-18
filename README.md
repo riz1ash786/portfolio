@@ -18,7 +18,7 @@
 
 ## Screenshot of deployed application
 
-![screencapture-file-Users-rizwanashraf-Homework-homework-week1-homework-week1-index-html-2021-12-10-15_14_32](https://user-images.githubusercontent.com/93995881/145607732-839a715a-99b1-4a81-b2fb-a087cddc70ab.png)
+![screencapture-file-Users-rizwanashraf-homework-Homework-week2-portfolio-index-html-2021-12-18-21_43_19.png](https://github.com/riz1ash786/portfolio/blob/fa21fc4bc04cab732a07fe49a4223d10f368a3ed/)
 
 ---
 
