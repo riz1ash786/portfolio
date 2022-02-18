@@ -106,7 +106,7 @@ p {
   background-color: #7f7d7c;
   color: #eff5f9;
   width: 85%;
-  min-width: 50%;
+  flex-grow: 1;
 }
 .prof {
   margin-bottom: 20px;
@@ -114,6 +114,7 @@ p {
   background-color: #7f7d7c;
   width: 14%;
   min-width: 200px;
+  max-width: 260px;
 }
 
 #profile-image {
@@ -396,24 +397,24 @@ h3 {
   .box1 {
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 100%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
   .box2 {
-    width: 100%;
+    width: 80%;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
   }
   .box3 {
-    width: 100%;
+    width: 80%;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
   }
   .box4 {
-    width: 100%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -537,8 +538,8 @@ h3 {
       margin-left: auto;
       margin-right: auto;
     }
-    /* body {
-    background-color: #ffffff;
-  } */
+    body {
+      background-color: #dfd8ce;
+    }
   }
 }
