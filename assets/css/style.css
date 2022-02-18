@@ -74,7 +74,7 @@ a {
 }
 /* paragraph font size 18px */
 p {
-  font-size: 18px;
+  font-size: 19px;
   margin: 10px 0;
 }
 
@@ -114,7 +114,7 @@ p {
   background-color: #7f7d7c;
   width: 14%;
   min-width: 200px;
-  max-width: 260px;
+  max-width: 250px;
 }
 
 #profile-image {
@@ -159,6 +159,7 @@ p {
 
 .contact-me li {
   margin: 10px 0;
+  font-size: 19px;
 }
 
 .resume li :hover,
@@ -190,24 +191,9 @@ p {
   max-height: 200px;
 }
 
-.about-me h2 {
+h2 {
   margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.work-samples h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.contact-me h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.resume h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
+  font-size: 38px;
 }
 
 h3 {
@@ -402,24 +388,24 @@ h3 {
   .box1 {
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 80%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
   .box2 {
-    width: 80%;
+    width: 70%;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
   }
   .box3 {
-    width: 80%;
+    width: 70%;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
   }
   .box4 {
-    width: 80%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
