@@ -114,7 +114,7 @@ p {
   background-color: #7f7d7c;
   width: 14%;
   min-width: 200px;
-  max-width: 250px;
+  max-width: 230px;
 }
 
 #profile-image {
@@ -383,6 +383,7 @@ h3 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
     /* display: inline-block; */
   }
   .box1 {
@@ -490,13 +491,14 @@ h3 {
       border-color: #bd6925;
       border-style: solid;
       border-width: 3px;
+      text-align: left;
     }
 
     .work-samples {
       justify-content: space-around;
       width: 100%;
       height: fit-content;
-      text-align: center;
+      text-align: left;
       margin-left: auto;
       margin-right: auto;
       border-radius: 10px;
