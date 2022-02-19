@@ -14,6 +14,10 @@
 
 - When the website is resized it adapts to different screen sizes and devices and also adapts to different viewpoints.
 
+- I have updated my portfolio with more recent examples of my work including a group project that my team and I created.
+
+- Also, I have updated my GitHub, resume and LinkedIn profiles.
+
 ---
 
 ## Screenshot of deployed application
