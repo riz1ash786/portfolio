@@ -259,19 +259,7 @@ h3 {
 }
 
 .box1:hover {
-  opacity: 75%;
-}
-
-.box2:hover {
-  opacity: 75%;
-}
-
-.box3:hover {
-  opacity: 75%;
-}
-
-.box4:hover {
-  opacity: 75%;
+  opacity: 50%;
 }
 
 .smallbox1 {
@@ -284,35 +272,6 @@ h3 {
   bottom: 10%;
 }
 
-.smallbox2 {
-  position: absolute;
-  width: 150px;
-  height: 75px;
-  background: #2a2725;
-  padding: 10px;
-  left: 0%;
-  bottom: 10%;
-}
-
-.smallbox3 {
-  position: absolute;
-  width: 150px;
-  height: 75px;
-  background: #2a2725;
-  padding: 10px;
-  left: 0%;
-  bottom: 10%;
-}
-
-.smallbox4 {
-  position: absolute;
-  width: 150px;
-  height: 75px;
-  background: #2a2725;
-  padding: 10px;
-  left: 0%;
-  bottom: 10%;
-}
 
 /* footer padding set to 30px and aligned to center */
 .footer {
@@ -341,7 +300,7 @@ h3 {
     transform: rotate(16deg);
   }
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1600px) {
   .container--portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -392,23 +351,6 @@ h3 {
   .box1 {
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .box2 {
-    width: 95%;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .box3 {
-    width: 95%;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .box4 {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -514,23 +456,6 @@ h3 {
     .box1 {
       margin-top: 10px;
       margin-bottom: 10px;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .box2 {
-      width: 100%;
-      margin-bottom: 10px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .box3 {
-      width: 100%;
-      margin-bottom: 10px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .box4 {
       width: 100%;
       margin-left: auto;
       margin-right: auto;
